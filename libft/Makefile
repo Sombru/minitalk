@@ -28,7 +28,7 @@ SRCS =	$(ARRAYS)ft_arrcomb.c $(ARRAYS)ft_arrcpy.c $(ARRAYS)ft_arrstr_rm.c $(ARRA
 		$(TYPES)ft_isalpha.c $(TYPES)ft_isdigit.c $(TYPES)ft_isalnum.c $(TYPES)ft_isascii.c \
 		$(TYPES)ft_isprint.c \
 		$(FT_PRINTF)ft_printf.c $(FT_PRINTF)debug.c $(FT_PRINTF)convert.c $(FT_PRINTF)parse_flags.c \
-		$(FT_PRINTF)print_char.c $(FT_PRINTF)print_hex.c $(FT_PRINTF)print_pointer.c $(FT_PRINTF)print_string.c \
+		$(FT_PRINTF)print_char.c $(FT_PRINTF)print_digit.c $(FT_PRINTF)print_hex.c $(FT_PRINTF)print_pointer.c $(FT_PRINTF)print_string.c \
 		$(FT_PRINTF)print_unsigned.c 
 		
 OBJS = $(SRCS:%.c=.obj/%.o)
