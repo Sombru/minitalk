@@ -56,15 +56,21 @@ int main(int argc, char **argv)
 	k = 0;
 	if (argc != 3)
 		return ft_printf("Error: bad number of arguments\n");
+	ft_printf("value: %d\n", argv[2][0]);
 	while (i < ft_strlen(argv[2]))
 	{
 		k = 0;
 		while (k < 8)
 		{
+			usleep(100);
 			if (argv[2][i] & 0b10000000)
+			{
 				kill(ft_atoi(argv[1]), SIGUSR1);
+			}
 			else
+			{
 				kill(ft_atoi(argv[1]), SIGUSR2);
+			}
 			argv[2][i] <<= 1;
 			++k;
 		}
